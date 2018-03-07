@@ -1,0 +1,26 @@
+﻿@model CustomerProject.Models.OrdersForCustomer
+
+@{
+    ViewBag.Title = "Orders For Customer";
+}
+
+<h2>Orders For Customer</h2>
+
+<h3>Customer: @Model.Customer.Name</h3>
+
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Total</th>
+    </tr>
+
+    @foreach (var item in Model.Orders)
+    {
+        <tr>
+            <td>@item.Date</td>
+            <td>@item.Description</td>
+            <td>@item.Total</td>
+        </tr>
+    }
+</table>
