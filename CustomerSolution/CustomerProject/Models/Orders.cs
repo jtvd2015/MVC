@@ -16,7 +16,7 @@ namespace CustomerProject.Models
 
         public decimal Total { get; set; }
         public int CustomerId { get; set; }  //Foreign Key, real Db SQL connection
-        public virtual Customer Customer { get; set; }  //virtual means that the Customer
+        public virtual Customer Customer { get; set; }  //virtual means that an instance of the Customer associated with the Orders
 
         public Orders() //constructor
         {
